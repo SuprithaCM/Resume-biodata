@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Supritha C M - Portfolio</title>
+  
+  <!-- CSS Stylesheets -->
+  <link rel="stylesheet" href="style.css">
+  
+  <!-- Font Awesome Icons & Google Fonts -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+  
+  <!-- jQuery Library -->
+  <script src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
+</head>
+<body>
+
+  <!-- Navigation Bar -->
+  <header class="navbar">
+    <div class="nav-container">
+      <a href="#home" class="logo nav-link">
+        Supritha <span>C M</span>
+      </a>
+      <ul class="nav-menu">
+        <li><a href="#home" class="nav-link active" data-page="home"><i class="fas fa-home"></i> Home</a></li>
+        <li><a href="#biodata" class="nav-link" data-page="biodata"><i class="fas fa-id-card"></i> Biodata</a></li>
+        <li><a href="#resume" class="nav-link" data-page="resume"><i class="fas fa-file-alt"></i> Resume</a></li>
+      </ul>
+      <button class="mobile-toggle" aria-label="Toggle menu">
+        <i class="fas fa-bars"></i>
+      </button>
+    </div>
+  </header>
+
+  <main class="main-content">
+    
+    <!-- PAGE 1: HOME PAGE -->
+    <section id="home" class="page-section active">
+      <div class="hero-container">
+        <div class="hero-text">
+          <span class="greeting-badge"><i class="fas fa-sparkles"></i> Welcome to my portfolio</span>
+          <h1>Hi, I'm <span class="text-royal">Supritha C M</span></h1>
+          <h2 class="subtitle">Aspiring Data Analyst </h2>
+          <p class="summary-text">
+            Motivated and detail-oriented Computer Science student with a strong academic background (9.16 CGPA) and a passion for software development and data visualization. Eager to turn complex data into actionable insights and build innovative technology solutions.
+          </p>
+          <div class="cta-buttons">
+            <a href="#resume" class="btn btn-primary nav-link" data-page="resume"><i class="fas fa-eye"></i> View Resume</a>
+            <a href="#biodata" class="btn btn-secondary nav-link" data-page="biodata"><i class="fas fa-user"></i> Biodata</a>
+          </div>
+          <div class="quick-contacts">
+            <a href="mailto:cmsuprithagowda@gmail.com"><i class="fas fa-envelope"></i> cmsuprithagowda@gmail.com</a>
+            <a href="tel:+918123645119"><i class="fas fa-phone"></i> +91 8123645119</a>
+            <span><i class="fas fa-location-dot"></i> Bengaluru South, India</span>
+          </div>
+        </div>
+        
+        <div class="hero-photo-container">
+          <div class="photo-wrapper">
+            <img src="profile.jpeg" alt="Supritha C M Profile Photo">
+          </div>
+          <div class="experience-badge">
+            <span class="number">9.16</span>
+            <span class="label">BE CGPA (RVIT)</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Quick Highlights -->
+      <div class="highlights-grid">
+        <div class="highlight-card">
+          <div class="icon-box"><i class="fas fa-chart-pie"></i></div>
+          <h3>Analytics & BI</h3>
+          <p> Power BI, Tableau, SQL, Excel, and data visualization tools.</p>
+        </div>
+        <div class="highlight-card">
+          <div class="icon-box"><i class="fas fa-code"></i></div>
+          <h3>Development</h3>
+          <p>C++, DSA, Python, HTML/CSS.</p>
+        </div>
+        <div class="highlight-card">
+          <div class="icon-box"><i class="fas fa-brain"></i></div>
+          <h3>Problem Solving</h3>
+          <p>Analytical thinker good in algorithm design and database systems.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- PAGE 2: BIODATA -->
+    <section id="biodata" class="page-section">
+      <div class="section-header">
+        <h2>Personal Details & Biodata</h2>
+        <p>Comprehensive overview of personal background, education, and interests</p>
+      </div>
+
+      <div class="biodata-grid">
+        <!-- Personal Information Card -->
+        <div class="biodata-card">
+          <div class="card-title">
+            <i class="fas fa-user-check"></i>
+            <h3>Personal Information</h3>
+          </div>
+          <table class="biodata-table">
+            <tr>
+              <td><strong>Full Name</strong></td>
+              <td>Supritha C M</td>
+            </tr>
+            <tr>
+              <td><strong>Role</strong></td>
+              <td>Aspiring Data Analyst </td>
+            </tr>
+            <tr>
+              <td><strong>Location</strong></td>
+              <td>Bengaluru South, Karnataka, India</td>
+            </tr>
+            <tr>
+              <td><strong>Email</strong></td>
+              <td>cmsuprithagowda@gmail.com</td>
+            </tr>
+            <tr>
+              <td><strong>Phone</strong></td>
+              <td>+91 8123645119</td>
+            </tr>
+            <tr>
+              <td><strong>Languages</strong></td>
+              <td>English, Kannada</td>
+            </tr>
+          </table>
+        </div>
+
+        <!-- Academic Record Card -->
+        <div class="biodata-card">
+          <div class="card-title">
+            <i class="fas fa-graduation-cap"></i>
+            <h3>Academic Background</h3>
+          </div>
+          <div class="timeline">
+            <div class="timeline-item">
+              <span class="year">Present</span>
+              <h4>Bachelor of Engineering - CSE</h4>
+              <p class="inst">R V Institute of Technology, Bengaluru</p>
+              <p class="score"><strong>CGPA:</strong> 9.16 / 10.0</p>
+            </div>
+            <div class="timeline-item">
+              <span class="year">2021 - 2023</span>
+              <h4>Pre-University College (PCMB)</h4>
+              <p class="inst">Jnanasweekar PU College, Bengaluru</p>
+              <p class="score"><strong>Percentage:</strong> 94.5%</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Personal Interests -->
+        <div class="biodata-card full-width">
+          <div class="card-title">
+            <i class="fas fa-heart"></i>
+            <h3>Interests & Hobbies</h3>
+          </div>
+          <div class="interests-flex">
+            <div class="interest-item">
+              <i class="fas fa-palette"></i>
+              <span>Painting</span>
+            </div>
+            <div class="interest-item">
+              <i class="fas fa-scissors"></i>
+              <span>Craft Making</span>
+            </div>
+            <div class="interest-item">
+              <i class="fas fa-plane-departure"></i>
+              <span>Travelling</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PAGE 3: RESUME -->
+    <section id="resume" class="page-section">
+      <div class="resume-header">
+        <div>
+          <h2>Resume</h2>
+          <p>Detailed technical profile, skills, certifications, and project work</p>
+        </div>
+        <button id="print-resume" class="btn btn-primary">
+          <i class="fas fa-print"></i> Print / Download PDF
+        </button>
+      </div>
+
+      <div class="resume-paper">
+        <!-- Resume Profile Header -->
+        <div class="resume-top-bar">
+          <div>
+            <h1>Supritha C M</h1>
+            <p class="role-title">Aspiring Data Analyst</p>
+          </div>
+          <div class="resume-socials">
+            <a href="https://linkedin.com/in/supritha-c-m-data-analyst-genai-enthusiast" target="_blank"><i class="fab fa-linkedin"></i> LinkedIn</a>
+            <a href="https://github.com/SuprithaCM" target="_blank"><i class="fab fa-github"></i> GitHub</a>
+            <a href="https://leetcode.com/u/Supritha_CM" target="_blank"><i class="fas fa-code"></i> LeetCode</a>
+          </div>
+        </div>
+
+        <div class="resume-section">
+          <h3><i class="fas fa-user"></i> Professional Profile</h3>
+          <p>
+            Motivated and detail-oriented Computer Science student with a strong academic background and a passion for software development and emerging technologies. Possess foundational knowledge in programming languages such as C++, SQL, Excel, PowerBI, Tableau along with an understanding of software development concepts, databases, and problem-solving techniques. Eager to apply technical knowledge to build efficient and innovative software solutions while learning from real-world industry projects.
+          </p>
+        </div>
+
+        <!-- Technical Skills -->
+        <div class="resume-section">
+          <h3><i class="fas fa-cogs"></i> Technical & Soft Skills</h3>
+          <div class="skills-grid">
+            <div class="skill-category">
+              <h4>Analytics & Visualization</h4>
+              <div class="tags">
+                <span class="tag">Power BI</span>
+                <span class="tag">Tableau</span>
+                <span class="tag">Excel</span>
+                <span class="tag">MySQL</span>
+              </div>
+            </div>
+            <div class="skill-category">
+              <h4>Programming & Web</h4>
+              <div class="tags">
+                <span class="tag">C++</span>
+                <span class="tag">Data Structures & Algorithms</span>
+                <span class="tag">HTML5</span>
+                <span class="tag">CSS</span>
+              </div>
+            </div>
+            <div class="skill-category">
+              <h4>Soft Skills</h4>
+              <div class="tags">
+                <span class="tag">Problem-Solving</span>
+                <span class="tag">Time Management</span>
+                <span class="tag">Communication Skills</span>
+                <span class="tag">Teamwork</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Projects -->
+        <div class="resume-section">
+          <h3><i class="fas fa-laptop-code"></i> Key Projects</h3>
+          <div class="project-card">
+            <div class="project-header">
+              <h4>A-Grid Navigator</h4>
+              <span class="tech-stack">C++, JavaScript, HTML, CSS, A* Algorithm</span>
+            </div>
+            <p>
+              A sleek pathfinding visualizer that demonstrates efficient robotic grid navigation and real-time obstacle avoidance. Built with vanilla web technologies for the interactive frontend and C++ for core algorithm implementation. Features real-time visualization of the A* algorithm.
+            </p>
+          </div>
+
+          <div class="project-card">
+            <div class="project-header">
+              <h4>Database Management System (DBMS) Project</h4>
+              <span class="tech-stack">SQL, ACID Properties, Indexing</span>
+            </div>
+            <p>
+              Created a comprehensive DBMS project applying schema design, ACID properties, indexing strategies, and query execution. Developed backend components for data persistence, concurrent access management, and efficient record retrieval operations.
+            </p>
+          </div>
+        </div>
+
+        <!-- Certifications -->
+        <div class="resume-section">
+          <h3><i class="fas fa-certificate"></i> Certifications</h3>
+          <ul class="cert-list">
+            <li><strong>Getting Started with Artificial Intelligence</strong> - IBM SkillsBuild (Oct 2024)</li>
+            <li><strong>Generative AI for Beginners</strong> - Simplilearn | SkillUP (Oct 2025)</li>
+            <li><strong>Programming Fundamentals: CLI & OS Commands</strong> - Infosys | Springboard (Dec 2025)</li>
+            <li><strong>Introduction to Java</strong> - Infosys | Springboard (Dec 2025)</li>
+            <li><strong>SQL (Basic)</strong> - HackerRank (Feb 2026)</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <p>&copy; 2026 Supritha C M. All rights reserved.</p>
+  </footer>
+
+  <!-- JavaScript File -->
+  <script src="script.js"></script>
+</body>
+</html>
